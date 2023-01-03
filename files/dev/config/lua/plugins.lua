@@ -106,18 +106,9 @@ function M.setup()
             config = "require('config/treesitter-config')",
         })
 
-        -- Testing
-        use({
-            "nvim-neotest/neotest",
-            requires = {
-                "nvim-lua/plenary.nvim",
-                "nvim-treesitter/nvim-treesitter",
-                "antoinemadec/FixCursorHold.nvim",
---                 "Issafalcon/neotest-dotnet",
-                "rouge8/neotest-rust"
-            },
-            config = "require('config/neotest-config')",
-        })
+        use({"nvim-lua/plenary.nvim"})
+        use({"antoinemadec/FixCursorHold.nvim"})
+        use({"rouge8/neotest-rust"})
 
         use({
             "nvim-tree/nvim-tree.lua",
