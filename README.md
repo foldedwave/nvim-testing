@@ -62,4 +62,7 @@ Running at each level in the summary view works as expected
 ### Notes
 
 Changes were required in the neotest repo to support both partial updates to the summary tree and tagging nodes in the tree as classes rather than namespaces.
-The dev version can also handle nested test classes (issues 26 and 27).
+
+The dev version can also handle nested test classes (issues 26 and 27)
+
+The dev changes work by searching all subfolders for test projects and pulling them into the test tree. Alternatives would be to scan folders and create separate trees (as in the current version) but also provide a way to run all test trees (perhaps this exists but I have missed it?).
