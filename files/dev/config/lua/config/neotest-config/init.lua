@@ -2,7 +2,7 @@ local neotest = require("neotest")
 
 local lib = require("neotest.lib")
 local DotnetNeotestAdapter = require("neotest-dotnet")
-DotnetNeotestAdapter.root = lib.files.match_root_pattern("*.sln")
+--DotnetNeotestAdapter.root = lib.files.match_root_pattern("*.sln")
 
 neotest.setup({
   adapters = {
