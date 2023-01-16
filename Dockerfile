@@ -80,11 +80,11 @@ RUN echo "*** Getting neotest-dotnet-tests repo ***" && \
 
 RUN echo "*** Getting neotest repo ***" && \
     cd /root/ && \
-    git clone --single-branch --branch PartialTreeUpdate https://github.com/foldedwave/neotest.git neotest
+    git clone https://github.com/foldedwave/neotest.git neotest
 
 RUN echo "*** Getting neotest-dotnet repo ***" && \
     cd /root/ && \
-    git clone --single-branch --branch csprojs_not_sln https://github.com/foldedwave/neotest-dotnet.git neotest-dotnet
+    git clone --single-branch --branch issue27 https://github.com/foldedwave/neotest-dotnet.git neotest-dotnet
 
 WORKDIR /root/dev
 CMD ["/bin/bash", "-c", "nvim"]
